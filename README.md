@@ -14,4 +14,4 @@ This is a battleship game created in Python using PyQt6.
    ```
 
 ## Notes
-Make sure the images for ships and explosions are in the correct `resource` folder.
+Make sure the images for ships and explosions are in the correct `resource` folder.# BattleSee_Game
