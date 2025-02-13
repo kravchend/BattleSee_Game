@@ -12,7 +12,7 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName("centralwidget")
 
         self.label_fon = QtWidgets.QLabel(self.centralwidget)
-        self.label_fon.setGeometry(QtCore.QRect(0, 0, 1240, 750))  # Устанавливаем фон на весь центральный виджет
+        self.label_fon.setGeometry(QtCore.QRect(0, 0, 1240, 750)) 
         self.label_fon.setPixmap(QtGui.QPixmap(
             "/Users/dmitriykravchenko/Documents/Programirovanie/BattleSee_Game/.venv/resource/fon.png"))
         self.label_fon.setScaledContents(True)
@@ -251,9 +251,8 @@ class Ui_MainWindow(object):
         self.statusLabel.setStyleSheet("background-color: rgb(32, 40, 46);")
         font = QtGui.QFont()
         font.setFamily("Academy Engraved LET")
-        font.setPointSize(20)  # Можно указать размер шрифта, если нужно
+        font.setPointSize(20) 
 
-        # Устанавливаем шрифт
         self.statusLabel.setFont(font)
         self.statusLabel.setText("")
         self.statusLabel.setObjectName("statusLabel")
@@ -283,11 +282,11 @@ class Ui_MainWindow(object):
 
         def paint_with_borders(event):
             original_paint_event(event)
-            # Теперь выполняем наш кастомный рисунок
+
             painter = QPainter(widget)
-            # Верхняя и левая границы (светлые)
+
             painter.setPen(QColor(205, 180, 180))
-            painter.drawLine(0, 0, widget.width(), 0)  # Верх
+            painter.drawLine(0, 0, widget.width(), 0)
 
         widget.paintEvent = paint_with_borders
 
